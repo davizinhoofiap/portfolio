@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Davi Victor - Desenvolvedor de Software & Estudante FIAP. Portfólio de Projetos e Habilidades.">
+    <title>Davi Victor | Desenvolvedor de Software</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos Customizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Indicador Lateral Vertical de Seções -->
+    <aside class="side-nav">
+        <div class="side-nav-index">
+            <a href="#hero" class="nav-idx-item active" data-sec="00"><span>00</span></a>
+            <a href="#about" class="nav-idx-item" data-sec="01"><span>01</span></a>
+            <a href="#skills" class="nav-idx-item" data-sec="02"><span>02</span></a>
+            <a href="#projects" class="nav-idx-item" data-sec="03"><span>03</span></a>
+            <a href="#contact" class="nav-idx-item" data-sec="04"><span>04</span></a>
+        </div>
+        <div class="scroll-down-hint">
+            <span>&lt; Rolar para baixo</span>
+        </div>
+    </aside>
+
+    <!-- Header / Navbar Minimalista -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#hero" class="brand-logo">
+                <span class="prompt-symbol">&gt;</span> DAVI.DEV
+            </a>
+
+            <div class="header-right">
+                <a href="#contact" class="btn-outline-pill">Contato</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text-block">
+                    <h1 class="hero-main-title" id="hero-title">
+                        Desenvolvedor de Software<br>& Front-End
+                    </h1>
+
+                    <p class="hero-description" id="hero-description">
+                        Estudante de Tecnologia na FIAP. Criando interfaces inteligentes, APIs robustas e aplicações web modernas de alto desempenho.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#about" class="accent-link">
+                            Sobre mim <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="#projects" class="accent-link secondary-link">
+                            Ver Projetos <i class="fa-solid fa-arrow-down-long"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ilustração Isométrica 3D do Setup / Workstation -->
+                <div class="hero-visual-block">
+                    <div class="isometric-workstation">
+                        <!-- SVG Isométrico Customizado -->
+                        <svg class="iso-svg" viewBox="0 0 800 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Glow de Fundo -->
+                            <circle cx="400" cy="300" r="220" fill="url(#purpleGlow)" opacity="0.4" />
+                            
+                            <!-- Mesa / Base Isométrica -->
+                            <path d="M150 420 L400 550 L650 420 L400 290 Z" fill="#12141D" stroke="#25293A" stroke-width="2"/>
+                            
+                            <!-- Monitor / Suporte -->
+                            <path d="M380 400 L420 400 L420 470 L380 470 Z" fill="#1E2230"/>
+                            <ellipse cx="400" cy="470" rx="50" ry="15" fill="#181B26" stroke="#33394D"/>
+                            
+                            <!-- Tela Principal do Monitor -->
+                            <path d="M240 180 L560 180 L560 400 L240 400 Z" fill="#161822" stroke="#A855F7" stroke-width="2" rx="8"/>
+                            <!-- Barra superior da janela de código -->
+                            <path d="M240 180 L560 180 L560 210 L240 210 Z" fill="#1E2230"/>
+                            <circle cx="260" cy="195" r="4" fill="#EF4444"/>
+                            <circle cx="275" cy="195" r="4" fill="#F59E0B"/>
+                            <circle cx="290" cy="195" r="4" fill="#10B981"/>
+
+                            <!-- Conteúdo da Tela (Código Simulado) -->
+                            <rect x="260" y="230" width="120" height="8" rx="4" fill="#A855F7" opacity="0.9"/>
+                            <rect x="260" y="250" width="180" height="6" rx="3" fill="#64748B"/>
+                            <rect x="280" y="265" width="140" height="6" rx="3" fill="#C084FC" opacity="0.7"/>
+                            <rect x="280" y="280" width="220" height="6" rx="3" fill="#38BDF8" opacity="0.7"/>
+                            <rect x="260" y="300" width="100" height="6" rx="3" fill="#A855F7"/>
+                            <rect x="260" y="320" width="200" height="6" rx="3" fill="#64748B"/>
+                            
+                            <!-- Emblema Roxo Flutuante no Centro (< />) -->
+                            <g class="floating-badge">
+                                <circle cx="480" cy="300" r="45" fill="url(#purpleGrad)" stroke="#E9D5FF" stroke-width="2"/>
+                                <path d="M465 290 L455 300 L465 310" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M495 290 L505 300 L495 310" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M485 285 L475 315" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            </g>
+
+                            <!-- Janela de Código Flutuante Esquerda -->
+                            <g class="floating-window-left">
+                                <path d="M120 120 L280 120 L280 260 L120 260 Z" fill="#1A1D2B" stroke="#33394D" stroke-width="1.5" rx="6"/>
+                                <path d="M120 120 L280 120 L280 142 L120 142 Z" fill="#24283B"/>
+                                <circle cx="135" cy="131" r="3" fill="#64748B"/>
+                                <circle cx="145" cy="131" r="3" fill="#64748B"/>
+                                <rect x="135" y="155" width="80" height="5" rx="2.5" fill="#C084FC"/>
+                                <rect x="135" y="170" width="110" height="5" rx="2.5" fill="#475569"/>
+                                <rect x="135" y="185" width="90" height="5" rx="2.5" fill="#475569"/>
+                                <rect x="135" y="200" width="120" height="5" rx="2.5" fill="#38BDF8"/>
+                            </g>
+
+                            <!-- Janela de Perfil Flutuante Direita -->
+                            <g class="floating-window-right">
+                                <path d="M520 100 L680 100 L680 220 L520 220 Z" fill="#1A1D2B" stroke="#33394D" stroke-width="1.5" rx="6"/>
+                                <path d="M520 100 L680 100 L680 122 L520 122 Z" fill="#24283B"/>
+                                <circle cx="535" cy="111" r="3" fill="#64748B"/>
+                                <rect x="535" y="135" width="60" height="5" rx="2.5" fill="#A855F7"/>
+                                <rect x="535" y="150" width="120" height="5" rx="2.5" fill="#475569"/>
+                                <rect x="535" y="165" width="100" height="5" rx="2.5" fill="#475569"/>
+                            </g>
+
+                            <!-- Teclado Isométrico -->
+                            <path d="M300 450 L460 450 L440 485 L280 485 Z" fill="#1E2230" stroke="#33394D"/>
+                            <!-- Teclas do teclado -->
+                            <path d="M310 455 L445 455" stroke="#38BDF8" stroke-width="2" opacity="0.6"/>
+                            <path d="M305 463 L440 463" stroke="#A855F7" stroke-width="2" opacity="0.8"/>
+                            <path d="M300 472 L430 472" stroke="#64748B" stroke-width="2"/>
+
+                            <!-- Caneca de Café Isométrica -->
+                            <g transform="translate(520, 440)">
+                                <cylinder>
+                                    <rect x="0" y="0" width="28" height="35" rx="4" fill="#2D3245" stroke="#475569"/>
+                                    <ellipse cx="14" cy="0" rx="14" ry="5" fill="#A855F7"/>
+                                    <path d="M28 8 C 36 8, 36 24, 28 24" stroke="#475569" stroke-width="3" fill="none"/>
+                                </cylinder>
+                            </g>
+
+                            <!-- Pirâmide Neon Flutuante em Roxo no Canto -->
+                            <g class="floating-cube">
+                                <path d="M 220 500 L 260 480 L 300 500 L 260 540 Z" fill="#A855F7" opacity="0.7"/>
+                                <path d="M 260 480 L 260 540" stroke="#E9D5FF" stroke-width="1.5"/>
+                            </g>
+
+                            <!-- Definições de Gradientes -->
+                            <defs>
+                                <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#A855F7" stop-opacity="0.5"/>
+                                    <stop offset="100%" stop-color="#0A0A0C" stop-opacity="0"/>
+                                </radialGradient>
+                                <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#C084FC"/>
+                                    <stop offset="100%" stop-color="#7E22CE"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rodapé Flutuante do GitHub (Estilo Referência) -->
+            <div class="hero-bottom-bar">
+                <a href="https://github.com/davizinhoofiap" target="_blank" class="github-pill-link">
+                    <i class="fa-brands fa-github"></i>
+                    <span id="hero-github-user">@davizinhoofiap</span>
+                </a>
+                <div class="tech-mini-badges">
+                    <span class="mini-badge purple">FIAP</span>
+                    <span class="mini-badge blue">JS / TS</span>
+                    <span class="mini-badge green">Node</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Barra de Troca de Usuário GitHub -->
+        <section class="github-sync-strip">
+            <div class="container-minimal">
+                <div class="sync-box">
+                    <div class="sync-label">
+                        <i class="fa-solid fa-terminal"></i>
+                        <span>Sincronizar Repositórios do GitHub:</span>
+                    </div>
+                    <form id="github-user-form" class="sync-form">
+                        <input type="text" id="github-username-input" placeholder="digite o @username..." required>
+                        <button type="submit" class="sync-btn">CARREGAR</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 01: Sobre Mim -->
+        <section id="about" class="content-section">
+            <div class="container-minimal">
+                <div class="section-label">
+                    <span class="sec-number">01</span>
+                    <h2>SOBRE MIM</h2>
+                </div>
+
+                <div class="about-flex">
+                    <div class="about-left">
+                        <h3 class="about-headline">
+                            Construindo soluções lógicas e funcionais através de código limpo.
+                        </h3>
+                        <p class="about-para" id="about-summary-text">
+                            Estudante de Tecnologia na FIAP e desenvolvedor focado no ecossistema web moderno. Dedico meu tempo ao aprendizado contínuo de arquiteturas de software, desenvolvimento de APIs REST e interfaces responsivas.
+                        </p>
+
+                        <div class="about-info-grid">
+                            <div class="info-block">
+                                <span class="label">Localização</span>
+                                <strong class="value" id="info-location">São Paulo, Brasil</strong>
+                            </div>
+                            <div class="info-block">
+                                <span class="label">Formação</span>
+                                <strong class="value">FIAP - Tecnologia</strong>
+                            </div>
+                            <div class="info-block">
+                                <span class="label">Foco Profissional</span>
+                                <strong class="value">Dev Jr / Estagiário</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-right">
+                        <div class="highlights-box">
+                            <h4>Diferenciais Profissionais</h4>
+                            <ul class="clean-list" id="about-highlights-list">
+                                <li>Foco em autonomia e rápido aprendizado</li>
+                                <li>Boas práticas de controle de versão (Git/GitHub)</li>
+                                <li>Comunicação clara e trabalho em equipe</li>
+                                <li>Resolução lógica de problemas complexos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 02: Habilidades & Tecnologias -->
+        <section id="skills" class="content-section">
+            <div class="container-minimal">
+                <div class="section-label">
+                    <span class="sec-number">02</span>
+                    <h2>HABILIDADES & TECNOLOGIAS</h2>
+                </div>
+
+                <div class="skills-grid-minimal">
+                    <div class="skill-card-minimal">
+                        <div class="card-header-mono">
+                            <span class="prefix">&gt;</span> Frontend
+                        </div>
+                        <div class="tag-cloud" id="skills-frontend"></div>
+                    </div>
+
+                    <div class="skill-card-minimal">
+                        <div class="card-header-mono">
+                            <span class="prefix">&gt;</span> Backend
+                        </div>
+                        <div class="tag-cloud" id="skills-backend"></div>
+                    </div>
+
+                    <div class="skill-card-minimal">
+                        <div class="card-header-mono">
+                            <span class="prefix">&gt;</span> Banco de Dados
+                        </div>
+                        <div class="tag-cloud" id="skills-database"></div>
+                    </div>
+
+                    <div class="skill-card-minimal">
+                        <div class="card-header-mono">
+                            <span class="prefix">&gt;</span> Ferramentas & Métodos
+                        </div>
+                        <div class="tag-cloud" id="skills-tools"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 03: Repositórios GitHub -->
+        <section id="projects" class="content-section">
+            <div class="container-minimal">
+                <div class="section-label">
+                    <span class="sec-number">03</span>
+                    <h2>PROJETOS EM DESTAQUE</h2>
+                </div>
+
+                <!-- Estatísticas do GitHub -->
+                <div class="repo-stats-counter">
+                    <div class="counter-item">
+                        <span class="count" id="stat-repos-count">0</span>
+                        <span class="lbl">Repositórios</span>
+                    </div>
+                    <div class="counter-divider">/</div>
+                    <div class="counter-item">
+                        <span class="count" id="stat-stars-count">0</span>
+                        <span class="lbl">Estrelas</span>
+                    </div>
+                    <div class="counter-divider">/</div>
+                    <div class="counter-item">
+                        <span class="count" id="stat-followers-count">0</span>
+                        <span class="lbl">Seguidores</span>
+                    </div>
+                </div>
+
+                <!-- Barra de Busca & Filtro de Linguagem -->
+                <div class="filter-toolbar">
+                    <div class="search-box-minimal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="project-search" placeholder="Filtrar projetos ou tecnologias...">
+                    </div>
+                    <div class="filter-pills" id="filter-buttons">
+                        <button class="pill-btn active" data-filter="all">Todos</button>
+                    </div>
+                </div>
+
+                <!-- Grid dos Projetos -->
+                <div class="projects-list-grid" id="projects-grid">
+                    <div class="loading-box">
+                        <i class="fa-solid fa-circle-notch fa-spin"></i>
+                        <p>Buscando projetos no GitHub...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 04: Contato -->
+        <section id="contact" class="content-section">
+            <div class="container-minimal">
+                <div class="section-label">
+                    <span class="sec-number">04</span>
+                    <h2>ENTRE EM CONTATO</h2>
+                </div>
+
+                <div class="contact-split">
+                    <div class="contact-prompt">
+                        <h3 class="prompt-title">Vamos trabalhar juntos?</h3>
+                        <p class="prompt-text">
+                            Estou disponível para conversas sobre oportunidades de estágio ou desenvolvedor junior. Entre em contato por qualquer um dos canais abaixo:
+                        </p>
+
+                        <div class="contact-direct-links">
+                            <a href="#" id="contact-linkedin" target="_blank" class="contact-line-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn / davimvictor</span>
+                            </a>
+                            <a href="#" id="contact-whatsapp" target="_blank" class="contact-line-link">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Conversar via WhatsApp</span>
+                            </a>
+                            <a href="https://github.com/davizinhoofiap" target="_blank" class="contact-line-link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub / davizinhoofiap</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="clean-form">
+                            <div class="form-row">
+                                <label for="form-name">Nome</label>
+                                <input type="text" id="form-name" placeholder="Seu nome ou empresa" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="form-email">E-mail</label>
+                                <input type="email" id="form-email" placeholder="seu.email@dominio.com" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="form-message">Mensagem</label>
+                                <textarea id="form-message" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                ENVIAR MENSAGEM <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                            <div id="form-feedback" class="feedback-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Projetos -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <span class="modal-lang-badge" id="modal-language">JavaScript</span>
+            <h3 id="modal-title" class="modal-title">Nome do Projeto</h3>
+            <p id="modal-description" class="modal-desc"></p>
+            
+            <div class="modal-meta-row">
+                <span><i class="fa-regular fa-star"></i> <strong id="modal-stars">0</strong> estrelas</span>
+                <span><i class="fa-solid fa-code-fork"></i> <strong id="modal-forks">0</strong> forks</span>
+                <span><i class="fa-regular fa-clock"></i> Atualizado em <strong id="modal-updated">--</strong></span>
+            </div>
+
+            <div id="modal-topics" class="modal-tags"></div>
+
+            <div class="modal-footer-actions">
+                <a href="#" id="modal-repo-link" target="_blank" class="btn-purple">
+                    <i class="fa-brands fa-github"></i> Abrir no GitHub
+                </a>
+                <a href="#" id="modal-demo-link" target="_blank" class="btn-outline-pill" style="display:none;">
+                    Demo ao Vivo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container-minimal footer-flex">
+            <p>&copy; <span id="current-year"></span> Davi Victor. Criado com foco em alta performance.</p>
+            <a href="#hero" class="top-link">Voltar ao topo ↑</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

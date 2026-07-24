@@ -346,7 +346,7 @@ function initContactForm() {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        feedback.textContent = '✓ Mensagem enviada com sucesso! Obrigado pelo contato.';
+        feedback.textContent = 'Mensagem enviada com sucesso. Obrigado pelo contato.';
         form.reset();
         setTimeout(() => feedback.textContent = '', 4000);
     });

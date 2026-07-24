@@ -1,87 +1,63 @@
-# 🚀 Portfólio Web para Desenvolvedor Jr / Estagiário
+# Portfólio de Desenvolvedor - Davi Victor
 
-Um portfólio moderno, responsivo e de alto impacto visual, integrado diretamente com a **API pública do GitHub**. Criado especialmente para destacar suas habilidades, projetos e trajetória para recrutadores e lideranças técnicas.
-
----
-
-## ✨ Principais Recurso
-
-- ⚡ **Integração em Tempo Real com o GitHub**: Carrega automaticamente sua foto de perfil, bio, número de repositórios, estrelas, seguidores e todos os seus projetos públicos.
-- 🎨 **Design System Moderno**: Efeitos em Glassmorphism, Dark Mode com gradientes neon, tipografia limpa (Inter + JetBrains Mono) e micro-interações.
-- 🔍 **Filtro e Busca Dinâmica de Projetos**: Permite filtrar repositórios por linguagem (JavaScript, Python, React, Java, HTML, etc.) ou buscar por nome/tecnologia.
-- 💡 **Modal de Detalhes do Projeto**: Exibe informações detalhadas do repositório, estrelas, forks, tags e links diretos para o código ou demo ao vivo.
-- 📱 **100% Responsivo**: Adaptado perfeitamente para celulares, tablets e desktops.
-- ⚙️ **Configuração Simplificada**: Altere seus dados em um único arquivo (`config.js`).
+Aplicaçao web interativa e responsiva criada para apresentar projetos, habilidades técnicas e trajetoria academica de Davi Victor (Estudante de Tecnologia na FIAP), com integraçao em tempo real a API pública do GitHub.
 
 ---
 
-## 🛠️ Como Personalizar Seu Portfólio
+## Visao Geral do Projeto
 
-Para colocar suas informações pessoais no portfólio, basta abrir o arquivo [`config.js`](file:///C:/Users/davizinho/.gemini/antigravity/scratch/portfolio-dev/config.js) e alterar os campos:
+Este projeto foi projetado com arquitetura modular e foco em boas práticas de desenvolvimento web. A aplicaçao consome dinamicamente dados do perfil e repositórios do GitHub, oferecendo aos recrutadores e lideranças técnicas uma visao clara da produçao de código, estatísticas de repositórios e linguagens utilizadas.
 
-```javascript
-const PORTFOLIO_CONFIG = {
-    // 1. Digite seu nome de usuário exato do GitHub
-    githubUsername: 'SEU_USERNAME_AQUI', 
+---
 
-    // 2. Seus dados pessoais e cargo desejado
-    name: 'Seu Nome Completo',
-    title: 'Desenvolvedor Jr / Estagiário de Software',
-    bio: 'Sua frase de apresentação marcante...',
-    
-    // 3. Seus links de contato e redes sociais
-    socialLinks: {
-        github: 'https://github.com/seu-user',
-        linkedin: 'https://linkedin.com/in/seu-perfil',
-        email: 'seuemail@exemplo.com',
-        whatsapp: 'https://wa.me/55XXXXXXXXXXX',
-        resumePdf: 'LINK_DO_SEU_CURRICULO_EM_PDF'
-    },
+## Tecnologias e Arquitetura
 
-    // 4. Suas tecnologias e conhecimentos
-    skills: {
-        frontend: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind'],
-        backend: ['Node.js', 'Express', 'Python', 'APIs REST'],
-        database: ['PostgreSQL', 'MySQL', 'MongoDB'],
-        tools: ['Git', 'GitHub', 'VS Code', 'Docker Basics', 'Scrum']
-    }
-};
+- Frontend: HTML5 semântico, CSS3 customizado (Arquitetura de temas escuros, Glassmorphism, layout responsivo) e JavaScript Modular (ES6+).
+- Integraçao com API REST: Consumo da API pública do GitHub (`/users/{username}` e `/users/{username}/repos`).
+- UI/UX: Design com foco em usabilidade, navegaçao por índice numérico, tipografia técnica (Plus Jakarta Sans e JetBrains Mono) e animaçoes leves.
+- Filtros Dinâmicos: Filtragem de repositórios por linguagem principal e busca por palavras-chave em tempo real.
+
+---
+
+## Principais Funcionalidades
+
+1. Sincronizaçao Dinâmica com GitHub: Carregamento automático de estatísticas (repositórios públicos, estrelas totais, seguidores e foto de perfil).
+2. Filtro e Busca de Projetos: Sistema de busca instantânea e categorizaçao por linguagem (JavaScript, TypeScript, Python, HTML/CSS, etc.).
+3. Modal de Detalhes do Repositório: Exibiçao de métricas, tópicos/tags do repositório, data de atualizaçao e links diretos para o código fonte e demonstraçao ao vivo.
+4. Formulário de Contato e Conexao Direta: Integraçao com botões para contato via LinkedIn e WhatsApp com privacidade de exibição.
+
+---
+
+## Estrutura de Arquivos
+
+```
+portfolio-dev/
+├── index.html        # Estrutura semântica principal da aplicaçao
+├── style.css         # Design system, variáveis de tema e responsividade
+├── app.js            # Lógica em JavaScript ES6+ e consumo da API do GitHub
+├── config.js         # Configuraçoes globais do perfil e redes sociais
+└── README.md         # Documentaçao técnica do projeto
 ```
 
 ---
 
-## 🌐 Como Publicar Gratuitamente no GitHub Pages (5 Passos)
+## Como Executar o Projeto Localmente
 
-1. **Crie um repositório no seu GitHub**:
-   - Acesse [github.com/new](https://github.com/new)
-   - Nomeie o repositório como `portfolio` ou `meu-portfolio`.
-   - Deixe-o como **Público**.
-
-2. **Suba os arquivos do seu projeto**:
-   - No seu terminal, dentro da pasta do projeto, execute:
-     ```bash
-     git init
-     git add .
-     git commit -m "Initial portfolio commit"
-     git branch -M main
-     git remote add origin https://github.com/SEU_USERNAME/meu-portfolio.git
-     git push -u origin main
-     ```
-
-3. **Ative o GitHub Pages**:
-   - Abra seu repositório no GitHub na web.
-   - Vá em **Settings** > **Pages** (no menu lateral esquerdo).
-   - Em **Build and deployment** > **Branch**, selecione `main` e a pasta `/ (root)`.
-   - Clique em **Save**.
-
-4. **Pronto! 🎉**
-   - Em cerca de 1 a 2 minutos, seu portfólio estará online no link:
-   - `https://SEU_USERNAME.github.io/meu-portfolio/`
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/davizinhoofiap/portfolio.git
+   ```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd portfolio
+   ```
+3. Abra o arquivo `index.html` em qualquer navegador web ou utilize uma extensao de servidor local (ex: Live Server no VS Code).
 
 ---
 
-## 💡 Dicas para Vagas de Desenvolvedor Jr / Estagiário
+## Contato e Redes Profissionais
 
-- 📌 **Mantenha seus repositórios organizados**: Adicione um bom arquivo `README.md` em cada projeto no seu GitHub explicando o problema resolvido, como rodar o projeto e imagens da tela.
-- 🌟 **Fixe seus melhores projetos**: No seu perfil do GitHub, use a opção "Pin" para destacar de 4 a 6 projetos dos quais você mais se orgulha.
-- ✉️ **Coloque o link deste Portfólio no seu LinkedIn e no Currículo PDF**!
+- Desenvolvedor: Davi Victor
+- Instituiçao: FIAP (Faculdade de Informática e Administraçao Paulista)
+- LinkedIn: https://www.linkedin.com/in/davimvictor/
+- GitHub: https://github.com/davizinhoofiap

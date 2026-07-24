@@ -6,6 +6,9 @@ const PORTFOLIO_CONFIG = {
     // Digite aqui o seu username exatamente como está no GitHub
     githubUsername: 'davizinhoofiap', 
 
+    // Repositórios ocultos do portfólio
+    excludedRepos: ['projetofintech-fiap'],
+
     // Dados Pessoais e Profissionais
     name: 'Davi Victor',
     title: 'Desenvolvedor Jr / Estagiário de TI',

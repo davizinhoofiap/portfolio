@@ -96,17 +96,21 @@ async function loadGitHubData(username) {
         if (!reposRes.ok) throw new Error('Erro ao carregar repositórios');
         const reposData = await reposRes.json();
 
-        allProjectsData = reposData;
+        // Oculta repositórios configurados na lista de exclusão
+        const excludedList = (window.PORTFOLIO_CONFIG?.excludedRepos || []).map(name => name.toLowerCase());
+        const filteredReposData = reposData.filter(repo => !excludedList.includes(repo.name.toLowerCase()));
+
+        allProjectsData = filteredReposData;
 
         // Atualiza Estatísticas
-        document.getElementById('stat-repos-count').textContent = userData.public_repos || reposData.length;
-        const totalStars = reposData.reduce((acc, repo) => acc + repo.stargazers_count, 0);
+        document.getElementById('stat-repos-count').textContent = filteredReposData.length;
+        const totalStars = filteredReposData.reduce((acc, repo) => acc + repo.stargazers_count, 0);
         document.getElementById('stat-stars-count').textContent = totalStars;
         document.getElementById('stat-followers-count').textContent = userData.followers || 0;
 
         // Renderiza Filtros e Cards
-        renderLanguageFilters(reposData);
-        renderProjects(reposData);
+        renderLanguageFilters(filteredReposData);
+        renderProjects(filteredReposData);
         initSearchAndFilterEvents();
 
     } catch (error) {

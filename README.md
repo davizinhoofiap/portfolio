@@ -1,5 +1,8 @@
 # Portfólio de Desenvolvedor - Davi Victor
 
+LINK PARA VISUALIZACAO AO VIVO DO PORTFOLIO:
+https://davizinhoofiap.github.io/portfolio/
+
 Aplicaçao web interativa e responsiva criada para apresentar projetos, habilidades técnicas e trajetoria academica de Davi Victor (Estudante de Tecnologia na FIAP), com integraçao em tempo real a API pública do GitHub.
 
 ---
